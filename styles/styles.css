@@ -1,0 +1,150 @@
+body {
+  margin: 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "League Spartan", sans-serif;
+}
+
+/*********************************** mainGrid ******************************/
+.main-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 125px;
+  grid-row-gap: 50px;
+  width: 70vw;
+  height: 80vh;
+  background-color: white;
+}
+/********************************* mainHeading *****************************/
+.usersCount{
+  box-sizing:border-box;
+  padding-right: 50px;
+}
+h1{
+  font-size: 3rem;
+}
+.userCountHeading{
+  color: #3D0545;
+}
+.text{
+  color: grey;
+  text-align: justify;
+}
+/********************************* Ratings ********************************/
+.reviews, .reports, .bestTech{
+  color: #3D0545;
+  background-color: #F7F2F7;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  line-height: 2.5;
+}
+.ratings{
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+.reviews{
+  right: 60px;
+}
+.reports{
+  right: 30px;
+}
+.stars{
+  width: 10px;
+}
+/******************************** profiles ********************************/
+.profiles{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-column-gap: 20px;
+}
+.coltonSmith{
+  position: relative;
+  bottom: 20px;
+}
+.ireneRoberts{
+  position: relative;
+  bottom: 10px;
+
+}
+.profile {
+  background-color: #3D0545;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 20px;
+}
+.nameImage{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.nameAndType{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 70px;
+}
+.remarks{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+.eachRemarks{
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+.profilePicture {
+  border-radius: 100%;
+  width: 30px;
+}
+.name{
+  color: white;
+  margin: 0 0 0;
+  font-size: 1rem;
+}
+.buyerType{
+  margin: 0 0 0;
+  color: #EE68A4;
+}
+p{
+  color: white;
+}
+
+@media (max-width:800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+  }
+  .main-grid{
+    display: flex;
+    flex-direction:column;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .reviews, .reports{
+    right: 0;
+  }
+  .ratings{
+    box-sizing: border-box;
+    padding-top: 0;
+  }
+
+  .profiles{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
